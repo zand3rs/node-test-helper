@@ -1,8 +1,11 @@
 {
   "name": "node-test-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test helper suite using mocha test framework.",
   "main": "index.js",
+  "bin": {
+    "node-test-helper": "./bin/node-test-helper.js"
+  },
   "scripts": {
     "test": "make MOCHA_OPTS='-C -R dot' test"
   },
