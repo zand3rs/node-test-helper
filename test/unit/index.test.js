@@ -55,6 +55,20 @@ describe(package.name, function() {
         _expect(requireHelper).to.equal(global.requireHelper);
       });
     });
+    describe("#beforeAll()", function() {
+      it("should be defined", function() {
+        _expect(beforeAll).to.exist;
+        _expect(beforeAll).to.be.a("function");
+        _expect(beforeAll).to.equal(global.beforeAll);
+      });
+    });
+    describe("#afterAll()", function() {
+      it("should be defined", function() {
+        _expect(afterAll).to.exist;
+        _expect(afterAll).to.be.a("function");
+        _expect(afterAll).to.equal(global.afterAll);
+      });
+    });
     describe("#expect()", function() {
       it("should be defined", function() {
         _expect(expect).to.exist;
