@@ -1,7 +1,7 @@
 {
   "name": "node-test-helper",
-  "version": "0.2.0",
-  "description": "Test helper suite using mocha test framework.",
+  "version": "0.2.1",
+  "description": "Test helper suite using Mocha test framework.",
   "main": "index.js",
   "bin": {
     "node-test-helper": "./bin/node-test-helper.js"
@@ -15,6 +15,7 @@
   },
   "keywords": [
     "node-test-helper",
+    "node_test_helper",
     "test-helper",
     "test_helper",
     "test",
@@ -27,14 +28,14 @@
   },
   "homepage": "https://github.com/zand3rs/node-test-helper",
   "dependencies": {
-    "async": "^0.9.0",
-    "chai": "^2.2.0",
-    "commander": "^2.7.1",
-    "fs-extra": "^0.17.0",
-    "lodash": "^3.6.0",
-    "mocha": "^2.2.1",
-    "prompt": "^0.2.14",
-    "sinon": "^1.14.1",
-    "sinon-chai": "^2.7.0"
+    "async": "~0.9.0",
+    "chai": "~2.2.0",
+    "commander": "~2.7.1",
+    "fs-extra": "~0.17.0",
+    "lodash": "~3.6.0",
+    "mocha": "~2.2.1",
+    "prompt": "~0.2.14",
+    "sinon": "~1.14.1",
+    "sinon-chai": "~2.7.0"
   }
 }

@@ -1,13 +1,13 @@
 # node-test-helper
-Test helper suite using [Mocha](https://github.com/mochajs/mocha) test framework.
+Test helper suite using Mocha test framework.
 
 
 ## Dependencies
 
-* [Mocha](https://github.com/mochajs/mocha)
-* [Chai](https://github.com/chaijs/chai)
-* [Sinon](https://github.com/cjohansen/Sinon.JS)
-* [Sinon-Chai](https://github.com/domenic/sinon-chai)
+* [mocha](https://github.com/mochajs/mocha)
+* [chai](https://github.com/chaijs/chai)
+* [sinon](https://github.com/cjohansen/Sinon.JS)
+* [sinon-chai](https://github.com/domenic/sinon-chai)
 
 
 ## Installation
@@ -53,11 +53,13 @@ require("node-test-helper");
 
 describe(TEST_NAME, function() {
   describe("without callback", function() {
+    //-- sync
     it("should be successful", function() {
     });
   });
 
   describe("with callback", function() {
+    //-- async
     it("should be successful", function(done) {
       done();
     });
