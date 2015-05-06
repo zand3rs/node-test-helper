@@ -17,28 +17,28 @@ describe(package.name, function() {
       it("should be defined", function() {
         _expect(TEST_ROOT_PATH).to.exist;
         _expect(TEST_ROOT_PATH).to.equal(global.TEST_ROOT_PATH);
-        _expect(TEST_ROOT_PATH).to.equal(path.join(process.cwd(), "test"));
+        _expect(TEST_ROOT_PATH).to.equal(path.join(cwd, "test"));
       });
     });
     describe("#TEST_HELPERS_PATH", function() {
       it("should be defined", function() {
         _expect(TEST_HELPERS_PATH).to.exist;
         _expect(TEST_HELPERS_PATH).to.equal(global.TEST_HELPERS_PATH);
-        _expect(TEST_HELPERS_PATH).to.equal(path.join(process.cwd(), "test", "helpers"));
+        _expect(TEST_HELPERS_PATH).to.equal(path.join(cwd, "test", "helpers"));
       });
     });
     describe("#TEST_FACTORIES_PATH", function() {
       it("should be defined", function() {
         _expect(TEST_FACTORIES_PATH).to.exist;
         _expect(TEST_FACTORIES_PATH).to.equal(global.TEST_FACTORIES_PATH);
-        _expect(TEST_FACTORIES_PATH).to.equal(path.join(process.cwd(), "test", "factories"));
+        _expect(TEST_FACTORIES_PATH).to.equal(path.join(cwd, "test", "factories"));
       });
     });
     describe("#TEST_FIXTURES_PATH", function() {
       it("should be defined", function() {
         _expect(TEST_FIXTURES_PATH).to.exist;
         _expect(TEST_FIXTURES_PATH).to.equal(global.TEST_FIXTURES_PATH);
-        _expect(TEST_FIXTURES_PATH).to.equal(path.join(process.cwd(), "test", "fixtures"));
+        _expect(TEST_FIXTURES_PATH).to.equal(path.join(cwd, "test", "fixtures"));
       });
     });
     describe("#TEST_NAME", function() {
