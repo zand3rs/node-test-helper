@@ -14,7 +14,7 @@ require(nodepath.join(__dirname, "lib", "before"));
 try {
   requireHelper("bootstrap");
 } catch (e) {
-  if (e.code !== "MODULE_NOT_FOUND") {
+  if (!(e.code === "MODULE_NOT_FOUND" && /bootstrap/.test(e.message))) {
     throw e;
   }
 }
