@@ -1,6 +1,6 @@
 {
   "name": "node-test-helper",
-  "version": "0.2.6",
+  "version": "1.0.0",
   "description": "Test helper suite using Mocha test framework.",
   "main": "index.js",
   "bin": {
